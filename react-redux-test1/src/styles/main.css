@@ -1,0 +1,57 @@
+/*
+Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.scss.
+        on line 2 of main.scss
+
+1: @import 'base';
+2: @import '~bootstrap/scss/bootstrap.scss';
+3: 
+4: // Some best-practice CSS that's useful for most apps
+5: // Just remove them if they're not what you want
+6: html {
+7:     box-sizing: border-box;
+
+Backtrace:
+main.scss:2
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/import_node.rb:44:in `import'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/import_node.rb:28:in `imported_file'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/import_node.rb:37:in `css_import?'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/plugin.rb:82:in `update_stylesheets'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
+/home/kevin/.gem/ruby/2.5.0/gems/sass-3.5.5/bin/scss:13:in `<top (required)>'
+/usr/bin/scss:23:in `load'
+/usr/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.scss.\A         on line 2 of main.scss\A \A 1: @import 'base';\A 2: @import '~bootstrap/scss/bootstrap.scss';\A 3: \A 4: // Some best-practice CSS that's useful for most apps\A 5: // Just remove them if they're not what you want\A 6: html {\A 7:     box-sizing: border-box;"; }

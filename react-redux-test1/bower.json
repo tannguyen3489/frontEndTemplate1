@@ -1,0 +1,20 @@
+{
+  "name": "react-redux-starter-kit",
+  "description": "Get started with React, Redux, and React-Router!",
+  "main": "index.js",
+  "authors": [
+    "David Zukowski <david@zuko.me> (http://zuko.me)"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
