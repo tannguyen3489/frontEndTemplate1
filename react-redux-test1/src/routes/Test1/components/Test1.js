@@ -1,22 +1,43 @@
 import React from 'react'
-import {BrowserRouter as Router, NavLink, Link, Route} from 'react-router-dom'
+import './Test1.scss';
+import {BrowserRouter as Router, Switch, NavLink, Link, Route} from 'react-router-dom'
+import {CSSTransition, TransitionGroup} from "react-transition-group"
+
 
 const BasicExample = () => (
     <Router>
-        <div>
-            <ul>
-                <li><NavLink to="/test1/index">Home</NavLink></li>
-                <li><NavLink to="/test1/about">About</NavLink></li>
-                <li><NavLink to="/test1/topics">Topics</NavLink></li>
-            </ul>
+        <Route
+            render={({ location }) => (
+                <div>
+                    <Route
+                        exact
+                        path="/"
+                        render={() => <Redirect to="/hsl/10/90/50" />}
+                    />
 
-            <hr/>
+                    <ul>
+                        <li><NavLink to="/test1/index">Home</NavLink></li>
+                        <li><NavLink to="/test1/about">About</NavLink></li>
+                        <li><NavLink to="/test1/topics">Topics</NavLink></li>
+                    </ul>
 
-            <Route exact path="/test1/index" component={Home}/>
-            <Route path="/test1/about" component={About}/>
-            <Route path="/test1/topics" component={Topics}/>
-        </div>
+                    <div>
+                        <TransitionGroup>
+                            <CSSTransition key={location.key} classNames="fade" timeout={5000}>
+                                <Switch location={location}>
+                                    <Route exact path="/test1/index" component={Home}/>
+                                    <Route path="/test1/about" component={About}/>
+                                    <Route path="/test1/topics" component={Topics}/>
+                                </Switch>
+                            </CSSTransition>
+                        </TransitionGroup>
+                    </div>
+                </div>
+            )}
+        />
     </Router>
+
+
 )
 
 export const Home = () => (

@@ -6,7 +6,7 @@
     "David Zukowski <david@zuko.me> (http://zuko.me)"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/tannguyen3489/frontEndTemplate1",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "animatewithsass": "^3.2.2"
   }
 }
