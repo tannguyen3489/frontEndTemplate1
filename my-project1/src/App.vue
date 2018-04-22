@@ -1,7 +1,17 @@
 <template>
     <div id="app">
         <img src="./assets/logo.png">
-        <router-view/>
+        <router-link to="/">Home</router-link>
+        <!--<router-link to="/tan1">Tan1</router-link>-->
+        <router-link to="/test1">Test1</router-link>
+        <router-link to="/test2">Test2</router-link>
+
+        <transition name="fade" mode="out-in">
+            <!-- used with preserve component state or avoid re-rendering. -->
+            <keep-alive include="test_1">
+                <router-view></router-view>
+            </keep-alive>
+        </transition>
     </div>
 </template>
 

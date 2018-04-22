@@ -1,6 +1,13 @@
 <template>
     <div ref="tan1Component" class="hello">
         <h1>{{ msg }}</h1>
+        <h1>computed : {{ reversedMessage }}</h1>
+
+        <p class="tan">{{ msg }}</p>
+        <input v-model="msg"/>
+        <input v-bind:value="msg"/>
+
+        <h1>now : {{ now }}</h1>
         <h2>Essential Links tan</h2>
         <button v-on:click="reverseMessage1">Reverse Message</button>
 

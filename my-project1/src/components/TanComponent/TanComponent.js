@@ -17,6 +17,17 @@ class Tan1 {
             data(){
                 return me.orginData;
             },
+
+            computed: {
+                reversedMessage: function() {
+                    return this.msg.split('').reverse().join('');
+                },
+                now: function () {
+                    return Date.now()
+                }
+            },
+
+
             methods: {
                 reverseMessage: function () {
                     this.msg = this.msg.split('').reverse().join('')
@@ -38,7 +49,6 @@ class Tan1 {
         fetch('https://jsonplaceholder.typicode.com/posts/1')
             .then(response => response.json())
             .then(json => console.log(json))
-
     }
 
     getVueComponent() {

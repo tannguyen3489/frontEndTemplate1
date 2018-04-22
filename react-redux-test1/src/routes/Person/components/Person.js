@@ -1,13 +1,32 @@
 import React from 'react'
 import {browserHistory} from 'react-router'
 
+
+
+
+
+class Welcome extends React.Component {
+
+    setValueTitle() {
+        console.info('tane')
+        this.props.welcomeObj.title = 'afdsfasd6666'
+    }
+
+    render() {
+        return <h1 onClick={this.setValueTitle.bind(this)}>Hello, {this.props.welcomeObj.title}</h1>;
+    }
+}
+
 class Person extends React.Component {
 
     constructor(props) {
         super(props);
 
         this.state = {
-            user: {}
+            user: {},
+            welcome: {
+                title: 'afsdfadsf'
+            }
         };
 
         this.goBack = this.goBack.bind(this);
@@ -63,6 +82,9 @@ class Person extends React.Component {
                         </div>
                     </div>
                 </div>
+
+
+                <Welcome welcomeObj={this.state.welcome} />
             </div>
         )
     }
